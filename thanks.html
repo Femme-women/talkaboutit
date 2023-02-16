@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/46055b79be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/46055b79be.css" crossorigin="anonymous">
+    <title>Home</title>
+   </head>
+<body>
+  <div class="color"></div>
+  <div class="center">
+    <div class="title">Thank you so much for submitting the form!</div>
+   <br> <div class="sub_title">Your feedback is extremely valuable</div>
+    <div class="btns">
+     <a href="home.html"> <button>Return home!</button></a>
+    </div>
+  </div>
+</body>
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Operetta';
+    src: url(celine-stencil.otf);
+  }
+  @font-face {
+    font-family: 'brandon';
+    src: url(HVD\ Fonts\ -\ BrandonText-Light.otf);
+}
+
+
+.color{
+  background: linear-gradient(130deg, rgba(240,159,114,1) 0%, rgba(211,148,111,1) 25%, rgba(197,143,110,1) 41%, rgba(187,139,109,1) 51%, rgba(144,123,104,1) 66%, rgba(146,124,104,1) 78%, rgba(103,108,100,1) 100%);;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -20;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  z-index: 20;
+}
+.center .title{
+  color: #fff;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: 'Operetta',sans-serif;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.center .btns{
+  margin-top: 20px;
+  
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Operetta',sans-serif;
+  z-index: 13;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+    </style>

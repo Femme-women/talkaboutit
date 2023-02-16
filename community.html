@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="community.css">
+    <script src="https://kit.fontawesome.com/46055b79be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/46055b79be.css" crossorigin="anonymous">
+    <script src="community.js"></script>
+  </head>
+   
+<body>
+
+  <nav>
+      <div class="logo">
+        <a href="home.html">
+            <img style="height: 80px; width: 170px;float: left;position: top left;padding-bottom: 15px;" src="aboutus.png">
+        </a>
+
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Women.html">Library</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="Contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="rectangle"></div>
+ <div class="container">
+ <button class="createpost" type="submit" onclick="openPopup()"> <i style="color: #313637;font-size: 40px;" class="fa-solid fa-circle-plus"></i></button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="imagecolumn">
+      <div class="uploadimage" id="imageupload">
+        <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+        <label for="file"><i style="color: #313637;font-size: 30px;cursor: pointer;position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);" class="fa-solid fa-arrow-up-from-bracket"></i></label>
+      </div>
+      </div>
+      <div class="input">
+        <button class="close" type="submit" onclick="closePopup()"> <i style="color: #313637;font-size: 30px;" class="fa-solid fa-ban"></i></button><br><br>
+       <form  onsubmit="myFunction()" action="https://formsubmit.co/meenu200108@gmail.com" method="post">
+        <input type="hidden" name="_next" value="https://femme-women.github.io/talkaboutit/community.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input name="username" type="text" id="username" placeholder="What do you want people to call you?" required>
+        <input name="subject" type="text" id="subject" placeholder="Add subject" required>
+          <textarea name="content" id="content" placeholder="Type in your message" required></textarea><br>
+          <button type="submit">Post!</button>
+          <div class="box">
+            </div>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
+      <br><br>
+      <h1 class="heading"> Welcome to the community!</h1>
+      <div class="blog-post">
+        <div class="image-container">
+          <img src="images/contactus2 (2).jpg" alt="Blog post image">
+        </div>
+        <div class="content-container">
+          <h2 class="username">Anonymous</h2>
+          <h3 class="subject">I got diagnosed with breast cancer</h3>
+          <p class="content">Being diagnosed with breast cancer was a devastating and life-altering experience. It was a huge shock that brought a flood of emotions, including fear, uncertainty, and grief. The thought of the potential changes to my physical and emotional well-being was overwhelming. However, I knew that breast cancer is a treatable disease, and with the support of loved ones and access to the best medical care, I was determined to fight it. The journey ahead was daunting, but I knew that I had to stay positive and take each day as it comes. With a strong support system and a positive attitude, I was ready to face the challenges of treatment and recovery.
+          </p>
+        </div>
+      </div>
+      <div class="blog-post">
+        <div class="image-container">
+          <img src="images/aboutus.jpg" alt="Blog post image">
+        </div>
+        <div class="content-container">
+          <h2 class="username">User_50</h2>
+          <h3 class="subject">What endometriosis feels like</h3>
+          <p class="content">Having endometriosis is a constant struggle with pain and discomfort. Every month, the pain intensifies, making it difficult to move or even get out of bed. It feels like a sharp, shooting pain that radiates throughout my lower abdomen, back, and legs, accompanied by headaches, nausea, and exhaustion. I often have to plan my life around my menstrual cycle, which is unpredictable and lasts for more than a week. Even after my period ends, I may still experience pain, making it hard to focus on work or daily activities. Endometriosis has also taken a toll on my mental health, causing anxiety and depression. It's a difficult condition to live with, but I am determined to manage my symptoms and not let it define my life.
+          </p>
+        </div>
+      </div>
+      
+      
+
+<script>
+  var imageupload = document.getElementById("imageupload");
+  var loadFile=function(event){
+    imageupload.style.backgroundImage="url("+URL.createObjectURL(event.target.files[0])+")";
+  }
+  let overlay = document.getElementById("overlay");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+  overlay.classList.add("open-overlay");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+  overlay.classList.remove("open-overlay");
+}
+
+function myFunction() {
+  alert("Your post is under review! The community will be updated soon after acceptance");
+}
+  </script>
+
+ </body>
+ <br><br>
+ <footer>
+  <div class="row">
+   <div class="column1">
+   <img style="height: 120px; width: 255px;float: left;position: top left;padding-top: 20px;padding-left: 20px;" src="footer.png"></imgstyle>
+ 
+   <p class="p">©️2023 Femme | All Rights Reserved</p>
+ </div>
+  <div class="column2">
+   <h2 class="h2">Visit ↓</h2>
+   <div class="visit">
+   <a href="home.html">Home</a><br>
+   <a href="About.html">About</a><br>
+   <a href="Women.html">Library</a><br>
+   <a href="Community.html">Community</a><br>
+   <a href="Contact.html">Contact Us</a>
+ </div>
+ </div>
+ <div class="column3">
+   <h2 class="h2"> Follow us on socials!</h2>
+     <a href="https://www.instagram.com/"><i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-instagram"></i></a>
+     <a href="https://www.linkedin.com/"> <i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-linkedin-in"></i></a>
+     <a href="https://twitter.com/"><i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-twitter"></i></a>
+      
+ 
+   <h2 class="h2"> Call us!</h2>
+   <p class="number">1234 5678</p>
+ 
+   <h2 class="h2-2"> Email us!</h2>
+   <div class="wrapper">
+    <p class="number">example@gmail.com</p>
+     
+   </div>
+ </div>
+ <div class="column4">
+   <h2 class="h2">The issues ↓</h2>
+   <div class="visit">
+   <a href="breastcancer.html">Breast Cancer</a><br>
+   <a href="Endometriosis.html">Endometriosis</a><br>
+   <a href="Infertility.html">Infertility</a><br>
+   <a href="ovarian and cervical cancer.html">Ovarian and Cerival Cancer</a><br>
+   <a href="mental health.html">Mental Health</a><br>
+   <a href="PCOS.html">PCOS</a><br>
+   <a href="PMDD.html">PMDD</a><br>
+   <a href="STDs.html">STDs</a>
+   </div>
+ </div>
+ 
+ </footer>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Health</title>
+    <link rel="stylesheet" href="women.css">
+          <script src="https://kit.fontawesome.com/46055b79be.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://kit.fontawesome.com/46055b79be.css" crossorigin="anonymous">
+   </head>
+<body style="background-color: #f6f6f7;">
+  <nav>
+      <div class="logo">
+        <a href="home.html">
+            <img style="height: 80px; width: 170px;float: left;position: top left;padding-bottom: 15px;" src="aboutus.png">
+        </a>
+
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Women.html">Library</a></li>
+        <li><a href="Community.html">Community</a></li>
+        <li><a href="Contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+ <div class="container">
+  <div class="rectangle"></div>
+  <img class="image" src="images/contactus2 (2).jpg">
+  <div class="rectangle2">
+  <p class="para1">Women's health refers to the branch of medicine that focuses on the treatment and diagnosis of 
+    diseases and conditions that affect a woman's physical and emotional well-being. Women have a unique set of health care 
+    challenges and are at higher risk of developing certain conditions and diseases than men.</p>
+    <br><br><br><br><br><br><br>
+    <form name="f1" action="" onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false" 
+    id="search-form"><div class="wrapper">
+      <input  name=t1 value="" size=20 class="search" type="text" id="search" placeholder="Search for an issue" required>
+      <button name=b1 value="find" class="submit" type="submit" value="submit"> Submit </button>
+    </div></form>
+  </div>
+</div>
+</div>
+
+<script language="JavaScript">
+  <!--
+  var TRange=null;
+  function findString (str) {
+   if (parseInt(navigator.appVersion)<4) return;
+   var strFound;
+   if (window.find) {
+  
+    strFound=self.find(str);
+    if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+     strFound=self.find(str)
+    }
+    if (!strFound) {
+     strFound=self.find(str,0,1)
+     while (self.find(str,0,1)) continue
+    }
+   }
+   else if (navigator.appName.indexOf("Microsoft")!=-1) {
+  
+   
+    if (TRange!=null) {
+     TRange.collapse(false)
+     strFound=TRange.findText(str)
+     if (strFound) TRange.select()
+    }
+    if (TRange==null || strFound==0) {
+     TRange=self.document.body.createTextRange()
+     strFound=TRange.findText(str)
+     if (strFound) TRange.select()
+    }
+   }
+   else if (navigator.appName=="Opera") {
+    alert ("Opera browsers not supported, sorry...")
+    return;
+   }
+   if (!strFound) alert ("String '"+str+"' not found!")
+   return;
+  }
+  //-->
+  </script>
+  
+
+<h1 class="h1">Major Women's Health Issues</h1>
+<br>
+<div class="grid-container">
+  <div class="item1">
+   <img style="height: 300px;width: 300px;filter:sepia(40%) grayscale(40%);"src="women's health images/breastcancer.jpeg">
+   <a style="text-decoration:none;"  href="breastcancer.html"><h1 class="h1-2">Breast Cancer</h1></a>
+    <p class="p">Breast cancer is a condition in which the breast's cells proliferate out of control. 
+      <mark class="mark">Breast cancer </mark> comes in several forms.
+      Which breast cells develop into cancer determine the type of breast cancer.</p>
+      <a href="breastcancer.html"><div class="frame">
+      <button class="btn btn-elements">Read More »</button>
+    </div>
+    </a>
+  </div>
+  <div class="item2">
+    <img style="height: 300px;width: 300px;filter:sepia(50%);"src="women's health images/endo.jpg">
+    <a style="text-decoration:none;" href="Endometriosis.html"><h1 class="h1-2">Endometriosis</h1></a>
+    <p class="p">A condition where tissue that normally lines the uterus starts to protrude outside of it. 
+      The tissue that is associated with <mark class="mark">endometriosis</mark> might be located on the ovaries, fallopian tubes, or intestines.</p>
+      <a href="Endometriosis.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+  <div class="item3">
+    <img style="height: 300px;width: 300px;filter:grayscale(50%)"src="women's health images/infertility.jpg">
+    <h1 class="h1-2">Infertility</h1>
+    <p class="p"><mark class="mark">Lose of ability to get pregnant</mark>, despite having planned, unprotected sex.  The exact cause is unknown, however it may involve issues with ovulation and low levels of several hormones.</p>
+      <a href="Infertility.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>  
+  <div class="item4">
+    <img style="height: 300px;width: 300px;filter:sepia(20%);"src="women's health images/ovarian cancer.jpeg">
+    <h1 class="h1-2">Ovarian and Cervical Cancer</h1>
+    <p class="p">The tissues of the <mark class="mark">cervix</mark>, which connects the uterus and vagina, are where cervical cancer develops.
+      <mark class="mark">Ovarian cancer</mark> forms in the tissues of the cervix, the organ connecting the uterus and vagina</p>
+      <a href="ovarian and cervical cancer.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+  <div class="item5">
+    <img style="height: 300px;width: 300px;filter:sepia(30%);"src="women's health images/mentalhealth2.jpg">
+    <h1 class="h1-2">Mental Health</h1>
+    <p class="p">Our emotional, psychological, and social <mark class="mark">well-being</mark> are all parts of our mental health. It influences our thoughts, emotions, and behaviours. Additionally, it influences how we respond to stress, interact with others, and make good decisions. It's crucial at every stage of life.</p>
+      <a href="mental health.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+  <div class="item6">
+    <img style="height: 300px;width: 300px;"src="women's health images/222.jpg">
+    <h1 class="h1-2">PCOS</h1>
+    <p class="p">An endocrine condition that results in enlarged ovaries with tiny cysts on the margins.
+       Although the exact aetiology of <mark class="mark">polycystic ovary syndrome</mark> is unknown, it may be a result of both hereditary 
+       and environmental factors. Caused when an excess amount of androgen is produced.</p>
+      <a href="PCOS.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+  <div class="item7">
+    <img style="height: 300px;width: 300px;filter:grayscale(50%)"src="women's health images/pmdd.jpg">
+    <h1 class="h1-2">PMDD</h1>
+    <p class="p">A severe, occasionally incapacitating progression of premenstrual syndrome (PMS). <mark class="mark">Premenstrual dysphoric disorder</mark> (PMDD) is a severe version of premenstrual syndrome (PMS), which includes behavioural and physical symptoms.</p>
+      <a href="PMDD.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+  <div class="item8">
+    <img style="height: 300px;width: 300px;filter: grayscale(20%) sepia(30%);"src="women's health images/std.jpg">
+    <h1 class="h1-2">STDs</h1>
+    <p class="p"><mark class="mark">Infections</mark> that are spread from one person to another through sexual contact are
+       known as sexually transmitted illnesses (STIs).  Blood, semen, vaginal fluid, and other bodily fluids can carry the 
+       bacteria, viruses, or parasites that cause stds. There are multiple types of STDs.
+      </p>
+      <a href="STDs.html"><div class="frame">
+        <button class="btn btn-elements">Read More »</button>
+      </div>
+      </a>
+  </div>
+</div>
+</div>
+
+<p class="important"><mark style="font-weight: bold;"class="mark">IMPORTANT</mark>: Do not take this as professional medical advice, please visit a medical professional in case of any peculiarity noticed in regards to health.</p> 
+<br>
+</body>
+<footer>
+  <div class="row">
+   <div class="column1">
+   <img style="height: 120px; width: 255px;float: left;position: top left;padding-top: 20px;padding-left: 20px;" src="footer.png"></imgstyle>
+ 
+
+ </div>
+  <div class="column2">
+   <h2 class="h2">Visit ↓</h2>
+   <div class="visit">
+   <a href="home.html">Home</a><br>
+   <a href="About.html">About</a><br>
+   <a href="Women.html">Library</a><br>
+   <a href="community.html">Community</a><br>
+   <a href="Contact.html">Contact Us</a>
+ </div>
+ </div>
+ <div class="column3">
+   <h2 class="h2"> Follow us on socials!</h2>
+     <a href="https://www.instagram.com/"><i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-instagram"></i></a>
+     <a href="https://www.linkedin.com/"> <i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-linkedin-in"></i></a>
+     <a href="https://twitter.com/"><i style="color: white;font-size: 30px;padding:10px;" class="fa-brands fa-twitter"></i></a>
+      
+ 
+   <h2 class="h2"> Call us!</h2>
+   <p class="number">1234 5678</p>
+ 
+   <h2 class="h2-2"> Email us!</h2>
+   <div class="wrapperfoot">
+    <p class="number">example@gmail.com</p>
+     
+   </div>
+ </div>
+ <div class="column4">
+   <h2 class="h2">The issues ↓</h2>
+   <div class="visit">
+   <a href="breastcancer.html">Breast Cancer</a><br>
+   <a href="Endometriosis.html">Endometriosis</a><br>
+   <a href="Infertility.html">Infertility</a><br>
+   <a href="ovarian and cervical cancer.html">Ovarian and Cerival Cancer</a><br>
+   <a href="mental health.html">Mental Health</a><br>
+   <a href="PCOS.html">PCOS</a><br>
+   <a href="PMDD.html">PMDD</a><br>
+   <a href="STDs.html">STDs</a>
+   </div>
+ </div>
+ 
+ </footer>
